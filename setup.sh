@@ -38,7 +38,7 @@ if [[ -z "${SSHKEY}" ]]; then
   echo "No SSH key detected.";
 else
   echo "- Installing SSH key...";
-  mkdir -p $HOME/.ssh/id_rsa;
+  mkdir -p $HOME/.ssh;
   echo "${SSHKEY}" > "$HOME/.ssh/id_rsa";
   chmod 600 $HOME/.ssh/id_rsa;
   chown dev:engineering $HOME/.ssh/id_rsa;
