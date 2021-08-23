@@ -4,13 +4,20 @@ alias ln="ln -v"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
+alias c="clear"
 
-# Bundler
-alias b="bundle"
+# Git-related
+alias g="git"
+alias gs="clear ; git status -sb"
+alias ga="clear ; git add -p"
+alias gca="git commit --amend"
+alias gdc="git diff --cached"
 
-# Rails
-alias migrate="bin/rails db:migrate db:rollback && bin/rails db:migrate db:test:prepare"
-alias s="rspec"
+# Tooling
+alias m="make"
+alias k="kubectl"
+alias bazel="bazelisk"
+
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
