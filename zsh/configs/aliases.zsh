@@ -7,3 +7,4 @@ alias m=make
 alias k=kubectl
 alias gdc="git diff --cached"
 alias g=git
+alias bazel=bazelisk
