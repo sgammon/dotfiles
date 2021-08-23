@@ -17,7 +17,7 @@ alias gdc="git diff --cached"
 alias m="make"
 alias k="kubectl"
 alias bazel="bazelisk"
-
+alias init="clear && source ~/dotfiles/setup.sh && gcloud auth login"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
