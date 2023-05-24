@@ -1,5 +1,5 @@
-🍪 cookies dotfiles
-===================
+sam's dotfiles
+==============
 
 Requirements
 ------------
