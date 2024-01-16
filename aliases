@@ -14,9 +14,9 @@ alias gca="git commit --amend"
 alias gdc="git diff --cached"
 
 # Tooling
-alias m="make"
+alias m="clear && make"
 alias k="kubectl"
-alias bazel="bazelisk"
+alias b="clear && bazel"
 alias init="clear && source ~/dotfiles/setup.sh && gcloud auth login"
 
 # Pretty print the path
