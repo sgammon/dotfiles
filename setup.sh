@@ -38,14 +38,14 @@ if [[ -z "${BUILDBUDDY_API_KEY}" ]]; then
   echo "No Buildbuddy API key detected.";
 else
   echo "- Installing Buildbuddy key...";
-  echo "build:buildbuddy --remote_header=${BUILDBUDDY_API_KEY}" >> "$HOME/.bazelrc";
+  echo "build:buildbuddy --remote_header=x-buildbuddy-api-key=${BUILDBUDDY_API_KEY}" >> "$HOME/.bazelrc";
 fi
 
 if [[ -z "${BUILDLESS_APIKEY}" ]]; then
   echo "No Buildless API key detected.";
 else
   echo "- Installing Buildless key...";
-  echo "build:buildless --remote_cache_header=${BUILDLESS_APIKEY}" >> "$HOME/.bazelrc";
+  echo "build:buildless --remote_cache_header=x-api-key=${BUILDLESS_APIKEY}" >> "$HOME/.bazelrc";
 fi
 
 if [[ -z "${SSHKEY}" ]]; then
